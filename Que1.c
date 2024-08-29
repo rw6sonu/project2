@@ -16,7 +16,7 @@ int main()
 
 
     printf("the grade is : %c\n",grade);
-    printf("wrong output\n");
+    
 
        //switch//
     switch(grade)
@@ -39,8 +39,6 @@ int main()
         case 'F':
               printf("Sorry You Fail..\n");
         break;
-        default:
-              printf("invaild grade\n");
         
     }
 
