@@ -12,7 +12,7 @@ int main()
                           :(marks>=70)?'C'
                           :(marks>=60)?'D'
                           :(marks>=50)?'E'
-                                      :'F';
+                          :(marks>=40)?'F':
 
 
     printf("the grade is : %c\n",grade);
@@ -39,11 +39,14 @@ int main()
         case 'F':
               printf("Sorry You Fail..\n");
         break;
+        default:
+              printf("invalid grade\n");
+
         
     }
 
     //check eligibility based on the grade//
-    if (grade=='A' ||grade=='B'||grade=='C'||grade=='D'){
+    if (grade=='A' ||grade=='B'||grade=='C'||grade=='D'||grade=='E'){
     
         printf("congratulations you are eligible for the next level\n");}
     
@@ -53,7 +56,7 @@ int main()
     
     else{
     
-        printf("invalid grade\n");}
+        printf("wrong output\n");}
     
        
 }
